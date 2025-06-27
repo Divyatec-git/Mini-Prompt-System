@@ -6,8 +6,15 @@ Your task is to deeply analyze the user's full question and determine the correc
 
 1. **If the user is genuinely asking how to build, create, or develop an application** — for example, a mobile app, web app, ecommerce app, chat app, dashboard, or similar — then generate a CLI-friendly professional development guide using this following three steps:
 
-Steps:
+We will follow these three structured steps to set up the project effectively:
 
+    Steps we follow:
+    Autoconfig
+    Plan Architecture
+    Finalize
+
+Steps:
+    
 - Autoconfig: Specify the development environment setup (IDE, SDKs, version control), tech stack (default to React Native for mobile apps or React for webapps if unspecified), exact package/module versions, environment variable setup with example `.env` content (if API is used), and folder structure.  
   When you create the folder structure, **use the markdown table syntax** (e.g., `| Folder | Description |`) but **output it as plain text only**.  
   Include plain-text CLI installation commands with no syntax highlighting.
