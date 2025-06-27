@@ -115,6 +115,7 @@ def main(question):
         prompt = f"Conversation History:\n{memory_history}\n\nCurrent Question:\n{question}\n\n{base_prompt}"
         
         
+        
         # Call API and display response
         response = call_openai(client, prompt, stream=True, stream_delay=0.1)
         
@@ -130,7 +131,7 @@ def main(question):
             # Display clarification prompt
             print(f"\n🔍 Clarification:")
             print(f"Did you mean {question} in another context or need further details?")
-            display_response(response)
+            # display_response(response)
 
         # Ask the next question
         print("\nAsk another question or type 'exit' to quit.")
